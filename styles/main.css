@@ -1,10 +1,10 @@
 #intro {
-  background: url("../img/panorama-3094696_1920.jpg") no-repeat center center;
+  background: url("../img/blue-grey.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .top-nav-collapse {
-  background-color: #3949ab !important;
+  background-color: #263238 !important;
 }
 
 .navbar:not(.top-nav-collapse) {
@@ -13,18 +13,13 @@
 
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
-    background: #3949ab !important;
+    background: #263238 !important;
   }
 }
 
 #intro .h6 {
   font-weight: 300;
   line-height: 1.7;
-}
-
-.hm-gradient .full-bg-img {
-  background: rgba(42, 27, 161, 0.7);
-  background: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
 }
 
 @media (max-width: 450px) {
@@ -38,10 +33,34 @@
   opacity: 0.7;
 }
 
-#pricing .card-image {
-  background: url("../img/architecture.jpg") no-repeat center center;
-}
-
 #pricing ul li {
   font-size: 1.1em;
+}
+
+#client .carousel-indicators li {
+  background-color: #9e9e9e !important;
+}
+
+#client .carousel-indicators .active {
+  background-color: #3f51b5 !important;
+}
+
+#contact .md-form input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #2BBBAD;
+  -webkit-box-shadow: 0 1px 0 0 #2BBBAD;
+  box-shadow: 0 1px 0 0 #2BBBAD;
+}
+
+#contact .md-form input[type=text]:focus:not([readonly]) + label {
+  color: #2BBBAD;
+}
+
+#contact .md-form textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #2BBBAD;
+  -webkit-box-shadow: 0 1px 0 0 #2BBBAD;
+  box-shadow: 0 1px 0 0 #2BBBAD;
+}
+
+#contact .md-form textarea:focus:not([readonly]) + label {
+  color: #2BBBAD;
 }
