@@ -9,7 +9,7 @@ var Paths = {
   HERE: './',
   DIST: 'dist/',
   CSS: './assets/css/',
-  SCSS_TOOLKIT_SOURCES: './assets/scss/paper-kit.scss',
+  SCSS_TOOLKIT_SOURCES: './assets/scss/now-ui-kit.scss',
   SCSS: './assets/scss/**/**'
 };
 

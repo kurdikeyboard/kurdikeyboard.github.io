@@ -14,6 +14,27 @@
   width: 100%;
 }
 
+.pick-class-label {
+  border-radius: 8px;
+  border: 1px solid #E3E3E3;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  margin-right: 10px;
+  padding: 23px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.offline-doc .page-header {
+  display: flex;
+  align-items: center;
+}
+
 .typography-line span {
   bottom: 10px;
   color: #c0c1c2;
@@ -57,136 +78,8 @@
   align-items: center;
 }
 
-/* Nucelo Icons */
-
-#icons-row i.nc-icons {
+#icons-row i.now-ui-icons {
   font-size: 30px;
-}
-
-.demo-iconshtml {
-  font-size: 62.5%;
-}
-
-.demo-icons body {
-  font-size: 1.6rem;
-  font-family: sans-serif;
-  color: #333333;
-  background: white;
-}
-
-.demo-icons a {
-  color: #608CEE;
-  text-decoration: none;
-}
-
-.demo-icons header {
-  text-align: center;
-  padding: 100px 0 0;
-}
-
-.demo-icons header h1 {
-  font-size: 2.8rem;
-}
-
-.demo-icons header p {
-  font-size: 1.4rem;
-  margin-top: 1em;
-}
-
-.demo-icons header a:hover {
-  text-decoration: underline;
-}
-
-.demo-icons .nc-icon {
-  font-size: 34px;
-}
-
-.demo-icons section {
-  width: 90%;
-  max-width: 1200px;
-  margin: 50px auto;
-}
-
-.demo-icons section h2 {
-  border-bottom: 1px solid #e2e2e2;
-  padding: 0 0 1em .2em;
-  margin-bottom: 1em;
-}
-
-.demo-icons ul::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.demo-icons ul li {
-  width: 20%;
-  float: left;
-  padding: 16px 0;
-  text-align: center;
-  border-radius: .25em;
-  -webkit-transition: background 0.2s;
-  -moz-transition: background 0.2s;
-  transition: background 0.2s;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  overflow: hidden;
-}
-
-.demo-icons ul li:hover {
-  background: #f4f4f4;
-}
-
-.demo-icons ul p,
-.demo-icons ul em,
-.demo-icons ul input {
-  display: inline-block;
-  font-size: 1rem;
-  color: #999999;
-  -webkit-user-select: auto;
-  -moz-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
-  white-space: nowrap;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  cursor: pointer;
-}
-
-.demo-icons ul p {
-  padding: 20px 0 0;
-  font-size: 12px;
-  margin: 0;
-}
-
-.demo-icons ul p::selection,
-.demo-icons ul em::selection {
-  background: #608CEE;
-  color: #efefef;
-}
-
-.demo-icons ul em {
-  font-size: 12px;
-}
-
-.demo-icons ul em::before {
-  content: '[';
-}
-
-.demo-icons ul em::after {
-  content: ']';
-}
-
-.demo-icons ul input {
-  text-align: center;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  outline: none;
-  display: none;
 }
 
 .space {
@@ -209,7 +102,7 @@
   display: block;
 }
 
-.navigation-example {
+.navigation-example .img-src {
   background-attachment: scroll;
 }
 
@@ -217,6 +110,7 @@
   background-position: center center;
   background-size: cover;
   margin-top: 0;
+  min-height: 740px;
   height: 100%;
 }
 
@@ -229,22 +123,6 @@
 
 .tim-note {
   text-transform: capitalize;
-}
-
-.download-area {
-  margin-top: 30px;
-}
-
-.sharing-area {
-  margin-top: 50px;
-}
-
-.sharing-area .btn {
-  margin-top: 14px;
-}
-
-.upgrade-pro .btn {
-  margin-top: 30px;
 }
 
 #buttons .btn,
@@ -280,12 +158,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
-
-.profile-content {
-  padding-top: 0;
-  position: relative;
-  z-index: 2;
 }
 
 .logo-container .logo {
@@ -520,6 +392,15 @@
 
 .section-navbars {
   padding-top: 0;
+}
+
+#navbar .navbar {
+  margin-bottom: 20px;
+}
+
+#navbar .navbar-toggler,
+#menu-dropdown .navbar-toggler {
+  pointer-events: none;
 }
 
 .section-tabs {
