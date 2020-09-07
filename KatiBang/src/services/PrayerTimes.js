@@ -9,43 +9,43 @@ export default class PrayerTimes {
         this.times = [
             {
                 name: 'fajr',
-                label: 'Fajr',
+                label: 'بەیانی',
                 meridiem: 'am',
                 index: [2, 3]
             },
             {
                 name: 'sunrise',
-                label: 'Sunrise',
+                label: 'خورهەڵاتن',
                 meridiem: 'am',
                 index: [4]
             },
             {
                 name: 'zuhr',
-                label: 'Dhuhr',
+                label: 'نیوەڕۆ',
                 meridiem: 'ampm',
                 index: [5, 6]
             },
             {
                 name: 'asr',
-                label: 'Asr 1',
+                label: 'عەسر',
                 meridiem: 'pm',
                 index: [7, 9]
             },
             {
                 name: 'asr2',
-                label: 'Asr 2',
+                label: 'عەسرێکی تر',
                 meridiem: 'pm',
                 index: [8]
             },
             {
                 name: 'maghrib',
-                label: 'Maghrib',
+                label: 'شێوان',
                 meridiem: 'pm',
                 index: [10, 11]
             },
             {
                 name: 'isha',
-                label: 'Isha',
+                label: 'خەوتنان',
                 meridiem: 'pm',
                 index: [12, 13]
             }
