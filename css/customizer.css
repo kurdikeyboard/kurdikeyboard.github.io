@@ -1,0 +1,209 @@
+.customize-control-group_heading_message h4.customizer-group-heading-message {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 1.7;
+}
+
+.customize-control-group_heading_message p.customizer-group-heading-message a {
+    font-weight: 700;
+}
+
+/* Theme Action Count */
+.theme-action-count {
+    padding: 0 6px;
+    display: inline-block;
+    background-color: #d54e21;
+    color: #fff;
+    font-size: 9px;
+    line-height: 17px;
+    font-weight: 600;
+    margin: 1px 0 0 2px;
+    vertical-align: top;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 26;
+}
+.item-hidden, .tem-add_by {
+    display: none;
+}
+
+.no-changeable .remove-btn-wrapper, .no-changeable .repeatable-actions, .no-changeable .widget-inside { display: none !important; }
+
+.list-repeatable .sortable-placeholder {
+    height: 42px;
+    display: block;
+}
+.list-repeatable li {
+    margin-bottom: 0px;
+    padding: 5px 0px 5px;
+}
+.list-repeatable .widget {
+    margin-bottom: 0px;
+}
+.list-repeatable  .widget-top:after {
+    clear: both; display: block; content: " ";
+}
+
+.list-repeatable .explained .widget-title-action .widget-action::after{
+    content: "\f142";
+}
+.list-repeatable .widget .widget-inside{
+    display: none;
+}
+.list-repeatable .widget.explained .widget-inside{
+    display: block;
+}
+.list-repeatable .wp-picker-holder {
+    position: absolute;
+    z-index: 99;
+}
+.list-repeatable .item{
+    margin-bottom: 15px;
+}
+.list-repeatable .item:first-child{
+    margin-top: 15px;
+}
+.list-repeatable .item label {
+    display: block;
+    margin-bottom: 10px;
+}
+.list-repeatable .item label.field-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.list-repeatabl input:not([type='radio']),
+.list-repeatabl input:not([type='checkbox']),
+.list-repeatable .item select,
+.list-repeatable .item textarea {
+    width: 100%;
+}
+
+.list-repeatable .item-media .actions , .repeatable-actions{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.list-repeatable .thumbnail-image {
+    margin-bottom: 10px;
+}
+.list-repeatable .thumbnail-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Special element */
+.repeatable-customize-control.show-display-field-only .widget-content .item{
+    display: none;
+}
+.section-videolightbox .item-bg_video,
+.section-videolightbox .item-bg_video,
+.section-videolightbox .item-bg_video_webm,
+.section-videolightbox .item-enable_parallax,
+.section-videolightbox .item-bg_video_ogv{
+    display: none;
+}
+
+.repeatable-customize-control.show-display-field-only .widget-content .item.item-show_section{
+    display: block;
+    margin-top: 15px;
+}
+.accordion-section-title .screenr-notice {
+    font-size: 10px;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 25px;
+    line-height: 16px;
+    margin-top: 3px;
+    display: inline-block;
+    font-weight: normal;
+    background: #D54E21;
+    color: #ffffff;
+    padding: 0px 5px;
+}
+
+
+/* Custom Plus Section */
+.control-section-upgrade-plus .accordion-section-title::after {
+    display: none;
+}
+
+#customize-controls .current-panel .control-section.control-section-upgrade-plus > h3.accordion-section-title {
+    padding-right: 20px;
+}
+
+#customize-controls .control-section-upgrade-plus .accordion-section-title:hover,
+#customize-controls .control-section-upgrade-plus .accordion-section-title:focus {
+    cursor:           default;
+    background-color: #fff;
+}
+
+.control-section-upgrade-plus .accordion-section-title .button {
+    float:       right;
+    margin-left: 8px;
+}
+
+.control-section-upgrade-plus .accordion-section-title a {
+    float:       right;
+    margin-left: 8px;
+}
+
+.rtl .control-section-upgrade-plus .accordion-section-title .button {
+    float:        left;
+    margin-left:  0;
+    margin-right: 8px;
+}
+
+
+.control-section-upgrade-plus > .accordion-section-title > a {
+    position: absolute;
+    top: 11px;
+    right: 12px;
+}
+
+html[dir="rtl"] .control-section-upgrade-plus > .accordion-section-title > a {
+    right: auto;
+    left: 12px;
+}
+
+
+#customize-control-glow_premium_features .customizer-group-heading-message span {
+    display: block;
+    margin-top: 7px;
+}
+
+#customize-control-glow_premium_features .customizer-group-heading-message span:before {
+    content: "\f147";
+    color: #7ac143;
+    display: inline-block;
+    font: 400 20px/17px dashicons;
+    margin: 3px 4px 3px 0;
+    vertical-align: top;
+}
+
+#customize-control-glow_premium_links .customizer-group-heading-message .glow-premium-buy-button{
+    background: #7ac143 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    padding: 12px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#accordion-section-glow_premium .accordion-section-title,
+#accordion-section-glow_premium .accordion-section-title::before,
+#customize-control-glow_premium .accordion-section-title::after{
+    background: #d54e21 none repeat scroll 0 0 !important;
+    color: #fff;
+}
+#accordion-section-glow_premium .accordion-section-title:hover {
+    color: #eee !important;
+}
+#customize-control-glow_premium_links .customizer-group-heading-message .glow-premium-buy-button:hover {
+    background: #90D75A;
+}

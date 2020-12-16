@@ -1,0 +1,140 @@
+// main: style.scss
+
+// SASS Variables and Mixins
+
+// Variables
+//--------------------------------------------------------
+
+
+$small_phone:	576px;
+$phone: 		600px;
+$tablet: 		940px;
+$small_desktop:	968px;
+
+//Grid
+$column: 		40px;
+$gutter: 		50px;
+$gutter2: 		30px;
+
+// Mixins
+//--------------------------------------------------------
+
+@mixin border-radius($radius: 2px) {
+    -webkit-border-radius:  $radius;
+    -moz-border-radius: $radius;
+    border-radius:  $radius;
+}
+
+// Mobile first responsive
+@mixin for-screen( $device ) {
+    @if $device == small-phone-min {
+        @media screen and (min-width: $small_phone) { @content; }
+    }
+    @else if $device == small-phone-max {
+        @media screen and (max-width: $small_phone) { @content; }
+    }
+    @if $device == phone-min {
+        @media screen and (min-width: $phone) { @content; }
+    }
+    @else if $device == phone-max {
+        @media screen and (max-width: $phone) { @content; }
+    }
+
+    @else if $device == tablet-min {
+        @media screen and (min-width: $tablet) { @content; }
+    }
+    @else if $device == tablet-max {
+        @media screen and (max-width: $tablet) { @content; }
+    }
+
+    @else if $device == desktop-min {
+        @media screen and (min-width: $small_desktop) { @content; }
+    }
+    @else if $device == desktop-max {
+        @media screen and (max-width: $small_desktop) { @content; }
+    }
+}
+
+// Center block
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@mixin clearfixAfter() {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+    clear: both;
+}
+
+
+// Use rem for better responsive
+$baseline-px: 16px;
+@mixin rem($property, $px-values) {
+
+    $baseline-rem: $baseline-px / 1rem;
+
+    #{$property}: $px-values;
+
+    @if type-of($px-values) == "number" {
+        #{$property}: $px-values / $baseline-rem; }
+    @else {
+        $rem-values: unquote("");
+        @each $value in $px-values {
+            @if $value == 0 {
+                $rem-values: append($rem-values, $value); }
+            @else {
+                $rem-values: append($rem-values, $value / $baseline-rem); } }
+        #{$property}: $rem-values; }
+}
+
+
+@mixin font-icon($code){
+    font-family: 'FontAwesome';
+    content: #{$code};
+}
+
+@mixin css3 ( $property, $value ){
+    -webkit-#{$property}: #{$value};
+    -moz-#{$property}: #{$value};
+    #{$property}: #{$value};
+}
+
+@mixin transition( $value ){
+    @include css3( 'transition', $value );
+}
+
+@mixin box-shadow() {
+    @include css3( 'box-shadow', 0 0 5px rgba(0, 0, 0, 0.12) );
+}
+
+
+// Clearfix
+@mixin clearfix() {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@mixin clearfixAfter() {
+  &::after{
+      content: "";
+      display: table;
+      clear: both;
+  }
+}

@@ -1,0 +1,19 @@
+=== Changelog ===
+Version 1.0.6
+* Add compare Free vs Pro tab
+* Add upsell message
+
+Version 1.0.5
+* Improve demo import tab.
+
+Version 1.0.3
+* Fixed isues for: Testiminial, sticky post, translation
+
+Version 1.0.2
+* Fixed isues for: Data Sanitization, excerpt_length, prefix, menu, slider
+
+Version 1.0.1
+* Updated css effects and some translation issues
+
+Version 1.0.0
+* Submitted theme for review in http://wordpress.org
